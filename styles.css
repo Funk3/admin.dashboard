@@ -1,0 +1,13 @@
+:root {
+    font-family: sans-serif, "roboto";
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+}
+
+.sidebar {
+    display: grid;
+}
