@@ -31,6 +31,12 @@ body {
 .header {
     grid-area: header;
     background-color: black;
+    display: grid;
+    grid-template-areas: 
+    "search admininfo"
+    "adminbig adminbutton";
+    grid-template-rows: 30% auto;
+    grid-template-columns: 60% auto;
 }
 
 .maincontent {
