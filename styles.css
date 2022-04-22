@@ -1,13 +1,6 @@
 :root {
     font-family: sans-serif, "roboto";
     background-color: #1e293b;
-    color: white;
-}
-
-.filter-white {
-    filter: invert(100%) sepia(0%) saturate(2%) hue-rotate(174deg) brightness(105%) contrast(101%);
-    width:30px;
-    grid-column: 1 / 2;
 }
 
 body {
@@ -19,8 +12,12 @@ body {
     "sidebar maincontent maincontent maincontent"
     "sidebar maincontent maincontent maincontent"
     "sidebar maincontent maincontent maincontent";
-    grid-template-rows: 12% auto auto auto;
+    grid-template-rows: 15% auto auto auto;
     grid-template-columns: 20% 30% 30% 20%;
+}
+
+.adminicon {
+    height: 20px;
 }
 
 .sidebar {
@@ -28,18 +25,86 @@ body {
     background-color: lightslategrey;
 }
 
+/* Header Content*/
 .header {
     grid-area: header;
-    background-color: black;
+    background-color: white;
     display: grid;
     grid-template-areas: 
     "search admininfo"
     "adminbig adminbutton";
-    grid-template-rows: 30% auto;
-    grid-template-columns: 60% auto;
+    grid-template-rows: 40% 60%;
+    grid-template-columns: 60% 40%;
+    padding-top: 20px;
+    padding-bottom: 30px;
 }
 
+/* Search Content for Header*/
+.search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 15px;
+}
+
+.searchbutton{
+    background-color: lightgray;
+    width: 80%;
+    height: 30px;
+    border-radius: 20px;
+    border: none;
+    border-style: none;
+}
+
+/* Admin Info for Header*/
+.admininfo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 20px;
+}
+
+.shroomsmall {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+/* Admin name for Header*/
+.adminbig {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 30px;
+    padding-left: 50px;
+    column-gap: 15px;
+}
+
+.adminiconbig {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+
+.hello {
+    font-size: 15px;
+    font-weight: bolder;
+}
+
+.adminnamebig {
+    font-size: 25px;
+    font-weight: bolder;
+}
+
+.admintext{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+}
+
+/* Main Content*/
 .maincontent {
     grid-area: maincontent;
-    background-color: white;
+    background-color: black;
 }
