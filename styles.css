@@ -14,62 +14,26 @@ body {
     height: 100vh;
     width: 100vw;
     display: grid;
-    grid-template-rows: 12% auto ;
-    grid-template-columns: 20% auto auto 15%;
+    grid-template-areas: 
+    "sidebar header header header"
+    "sidebar maincontent maincontent maincontent"
+    "sidebar maincontent maincontent maincontent"
+    "sidebar maincontent maincontent maincontent";
+    grid-template-rows: 12% auto auto auto;
+    grid-template-columns: 20% 30% 30% 20%;
 }
 
-
-/* Sidebar Content */
 .sidebar {
-    grid-column: 1 / 2;
-    grid-row: 1 / 5;
-    display: grid;
-    grid-template-columns: 20% auto;
-    grid-template-rows: 10% auto auto;   
-    background-color:  #475569;
+    grid-area: sidebar;
+    background-color: lightslategrey;
 }
 
-.title, .dashboardicon, .optionslinks, .optionicons, .adminicons, .adminlinks {
-    align-self: center;
-}
-
-.title {
-    grid-column: 2 / 3;
-    grid-row: 1 / 2;
-    
-}
-.dashboardicon {
-    grid-column: 1 / 2;
-    grid-row: 1 / 2;
-}
-
-.options {
-    display: grid;
-}
-.icons {
-    grid-column: 1 /2;
-    display: grid;
-    grid-template-rows: auto;
-}
-.optionlinks {
-    grid-column: 2 / 3;
-    display: grid;
-    grid-template-rows: auto;
-}
-
-/*.admin {
-    grid-column: 1 / 2;
-    grid-row: 3 / 4;   
-} */
-/*  Header Content */
 .header {
-    grid-column: 2 / 5;
-    display: grid;
+    grid-area: header;
+    background-color: black;
 }
 
-/* Main Content*/
 .maincontent {
-    grid-column: 2 / 5;
-    grid-row: 2 / 5;
-    display: grid;
+    grid-area: maincontent;
+    background-color: white;
 }
