@@ -39,13 +39,33 @@ button {
 }
 
 .mainadmin {
-    display:grid;
     height: 25vh;
+    display: grid;
 }
 
 .admincontrols {
-    display: grid;
     height: 12.5vh;
+    display: grid;
+}
+
+.link {
+    display: grid;
+    grid-template-areas: "icon text";
+    grid-template-columns: 20% 80%;
+}
+
+.sideimage {
+    display: flex;
+    grid-area: icon;
+    align-items: center;
+    justify-content: center;
+}
+
+.sidetext {
+    display: flex;
+    grid-area: text;
+    align-items: center;
+    justify-content: flex-start;
 }
 
 /* Header Content*/
