@@ -190,5 +190,31 @@ button {
 /* Main Content*/
 .maincontent {
     grid-area: maincontent;
-    background-color: black;
+    background-color: lightgray;
+    display: grid;
+    grid-template-areas:
+    "headerofmain sideofmain"
+    "project sideofmain"
+    "project sideofmain"
+    "project sideofmain";
+    grid-template-columns: 70% 30%;
+    grid-template-rows: 10% auto auto auto;
 }
+
+.headerofmain {
+    grid-area: headerofmain;
+    border: solid;
+    border-color: green;
+}
+.projectcards {
+    grid-area: project;
+    border: solid;
+    border-color: red;
+}
+
+.sideofmain {
+    grid-area: sideofmain;
+    border: solid;
+    border-color: blue;
+}
+
