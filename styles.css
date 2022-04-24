@@ -13,7 +13,7 @@ body {
     "sidebar maincontent maincontent maincontent"
     "sidebar maincontent maincontent maincontent";
     grid-template-rows: 15% auto auto auto;
-    grid-template-columns: 15% 32.5% 32.5% 20%;
+    grid-template-columns: 20% 30% 30% 20%;
 }
 
 .adminicon {
@@ -61,11 +61,43 @@ button {
     justify-content: center;
 }
 
-.sidetext {
+.dashimage {
+    display: flex;
+    grid-area: icon;
+    align-items: center;
+    justify-content: center;
+}
+
+.sidetext, .dashtext {
     display: flex;
     grid-area: text;
     align-items: center;
     justify-content: flex-start;
+    font-weight: bolder;
+    color: white;
+}
+
+.dashtext {
+    font-size: 30px;
+}
+.sidetext {
+    font-size: 25px;
+    display: flex;
+    grid-area: text;
+    align-items: center;;
+    justify-content: flex-start;
+}
+
+.dashboardimage {
+    width: 50px;
+    height: 50px;
+    filter: brightness(100) invert(1);
+}
+
+.sideicon {
+    width: 25px;
+    height: 25px;
+    filter: brightness(100) invert(1);
 }
 
 /* Header Content*/
