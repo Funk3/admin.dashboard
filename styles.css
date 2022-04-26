@@ -214,9 +214,6 @@ button {
     align-items: flex-end;
 }
 
-.projectcardsbox {
-   grid-area: 1 / 3;
-}
 .sideofmain {
     grid-area: sideofmain;
     border: solid;
