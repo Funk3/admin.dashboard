@@ -239,7 +239,7 @@ button {
 
 .sideofmain {
     grid-area: sideofmain;
-    border: solid;
+    /*border: solid;
     border-color: blue;
 }
 
