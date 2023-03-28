@@ -1,102 +1,152 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
     <title>Admin Dashboard</title>
-</head>
-<body>
+  </head>
+  <body>
     <!--Sidebar Content-->
     <div class="sidebar">
+      <div class="link">
+        <div class="dashimage">
+          <img class="dashboardimage" src="./reference/icons/dashboard.svg" />
+        </div>
+        <div class="dashtext">Dashboard</div>
+      </div>
+      <div class="mainadmin">
         <div class="link">
-            <div class="dashimage"><img class="dashboardimage" src="./reference/icons/dashboard.svg"></div>
-            <div class="dashtext">Dashboard</div>
+          <div class="sideimage">
+            <img class="sideicon" src="./reference/icons/home.svg" />
+          </div>
+          <div class="sidetext">Home</div>
         </div>
-        <div class="mainadmin">
-            <div class="link">
-                <div class="sideimage"><img class="sideicon" src="./reference/icons/home.svg"></div>
-                <div class="sidetext">Home</div>
-            </div>
-            <div class="link">
-                <div class="sideimage"><img class="sideicon" src="./reference/icons/profile.svg"></div>
-                <div class="sidetext">Profile</div>
-            </div>
-            <div class="link">
-                <div class="sideimage"><img class="sideicon" src="./reference/icons/message.svg"></div>
-                <div class="sidetext">Messages</div>
-            </div>
-            <div class="link">
-                <div class="sideimage"><img class="sideicon" src="./reference/icons/history.svg"></div>
-                <div class="sidetext">History</div>
-            </div>
-            <div class="link">
-                <div class="sideimage"><img class="sideicon" src="./reference/icons/task.svg"></div>
-                <div class="sidetext">Tasks</div>
-            </div>
-            <div class="link">
-                <div class="sideimage"><img class="sideicon" src="./reference/icons/communities.svg"></div>
-                <div class="sidetext">Communities</div>
-            </div>
+        <div class="link">
+          <div class="sideimage">
+            <img class="sideicon" src="./reference/icons/profile.svg" />
+          </div>
+          <div class="sidetext">Profile</div>
         </div>
-        <div class="admincontrols">
-            <div class="link">
-                <div class="sideimage"><img class="sideicon" src="./reference/icons/settings.svg"></div>
-                <div class="sidetext">Settings</div>
-            </div>
-            <div class="link">
-                <div class="sideimage"><img class="sideicon" src="./reference/icons/support.svg"></div>
-                <div class="sidetext">Support</div>
-            </div>
-            <div class="link">
-                <div class="sideimage"><img class="sideicon" src="./reference/icons/privacy.svg"></div>
-                <div class="sidetext">Privacy</div>
-            </div>
+        <div class="link">
+          <div class="sideimage">
+            <img class="sideicon" src="./reference/icons/message.svg" />
+          </div>
+          <div class="sidetext">Messages</div>
         </div>
+        <div class="link">
+          <div class="sideimage">
+            <img class="sideicon" src="./reference/icons/history.svg" />
+          </div>
+          <div class="sidetext">History</div>
+        </div>
+        <div class="link">
+          <div class="sideimage">
+            <img class="sideicon" src="./reference/icons/task.svg" />
+          </div>
+          <div class="sidetext">Tasks</div>
+        </div>
+        <div class="link">
+          <div class="sideimage">
+            <img class="sideicon" src="./reference/icons/communities.svg" />
+          </div>
+          <div class="sidetext">Communities</div>
+        </div>
+      </div>
+      <div class="admincontrols">
+        <div class="link">
+          <div class="sideimage">
+            <img class="sideicon" src="./reference/icons/settings.svg" />
+          </div>
+          <div class="sidetext">Settings</div>
+        </div>
+        <div class="link">
+          <div class="sideimage">
+            <img class="sideicon" src="./reference/icons/support.svg" />
+          </div>
+          <div class="sidetext">Support</div>
+        </div>
+        <div class="link">
+          <div class="sideimage">
+            <img class="sideicon" src="./reference/icons/privacy.svg" />
+          </div>
+          <div class="sidetext">Privacy</div>
+        </div>
+      </div>
     </div>
     <!--Header Content-->
     <div class="header">
-        <div class="search">
-            <img class="adminicon" src="./reference/icons/search.svg" alt="search">
-            <button class="searchbutton" type="submit"></button>
+      <div class="search">
+        <img
+          class="adminicon"
+          src="./reference/icons/search.svg"
+          alt="search"
+        />
+        <button class="searchbutton" type="submit"></button>
+      </div>
+      <div class="admininfo">
+        <img
+          class="adminicon"
+          src="./reference/icons/bellnoalert.svg"
+          alt="notification"
+        />
+        <img class="shroomsmall" src="./reference/shroom.jpg" alt="shroomish" />
+        <div class="adminname"><h4>Shroomish</h4></div>
+      </div>
+      <div class="adminbig">
+        <img
+          class="adminiconbig"
+          src="./reference/shroom.jpg"
+          alt="big shroomish"
+        />
+        <div class="admintext">
+          <div class="hello">Hi there,</div>
+          <div class="adminnamebig">Shroomish (@shroom)</div>
         </div>
-        <div class="admininfo">
-            <img class="adminicon" src="./reference/icons/bellnoalert.svg" alt="notification">
-            <img class="shroomsmall" src="./reference/shroom.jpg" alt="shroomish">
-            <div class="adminname"><h4>Shroomish</h4></div>
-        </div>
-        <div class="adminbig">
-            <img class="adminiconbig" src="./reference/shroom.jpg" alt="big shroomish">
-            <div class="admintext">
-                <div class="hello">Hi there,</div>
-                <div class="adminnamebig">Shroomish (@shroom)</div>
-            </div>
-        </div>
-        <div class="adminbutton">
-            <button class="new">New</button>
-            <button class="upload">Upload</button>
-            <button class="share">Share</button>
-        </div>
+      </div>
+      <div class="adminbutton">
+        <button class="new">New</button>
+        <button class="upload">Upload</button>
+        <button class="share">Share</button>
+      </div>
     </div>
     <!--Main Content-->
     <div class="maincontent">
-        <div class="projectcards">
-            <div class="headerofmain">
-                Your Projects
-            </div>
-            <div class="projectbox">
-                <div class="side"></div>
-                <div class="main">Ye</div>
-                <div class="adminbuttons">buttons</div>
-            </div>
-            <div class="projectbox">Ye</div>
-            <div class="projectbox">Ye</div>
-            <div class="projectbox">Ye</div>
-            <div class="projectbox">Ye</div>
-            <div class="projectbox">Ye</div>
+      <div class="projectcards">
+        <div class="headerofmain">Your Projects</div>
+        <div class="projectbox">
+          <div class="side"></div>
+          <div class="main">Ye</div>
+          <div class="adminbuttons">buttons</div>
         </div>
-        <div class="sideofmain"></div>
+        <div class="projectbox">
+          <div class="side"></div>
+          <div class="main">Ye</div>
+          <div class="adminbuttons">buttons</div>
+        </div>
+        <div class="projectbox">
+          <div class="side"></div>
+          <div class="main">Ye</div>
+          <div class="adminbuttons">buttons</div>
+        </div>
+        <div class="projectbox">
+          <div class="side"></div>
+          <div class="main">Ye</div>
+          <div class="adminbuttons">buttons</div>
+        </div>
+        <div class="projectbox">
+          <div class="side"></div>
+          <div class="main">Ye</div>
+          <div class="adminbuttons">buttons</div>
+        </div>
+        <div class="projectbox">
+          <div class="side"></div>
+          <div class="main">Ye</div>
+          <div class="adminbuttons">buttons</div>
+        </div>
+      </div>
+      <div class="sideofmain"></div>
     </div>
-</body>
+  </body>
 </html>
