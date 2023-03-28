@@ -240,28 +240,28 @@ button {
 .sideofmain {
   grid-area: sideofmain;
   display: grid;
-  border: solid;
-  border-color: blue;
-  grid-template-columns: 80%;
+
+  margin-left: 80px;
+  margin-right: 40px;
   grid-template-rows: 40%, 40%;
+  margin-bottom: 40px;
+  margin-top: 40px;
 }
 
 .announce {
-  display: grid;
-  grid-template-columns: 3% 95%;
-  grid-template-rows: 80% 20%;
+  margin-bottom: 40px;
   border: none;
   border-radius: 8px;
+}
+
+.box {
   background-color: rgba(163, 79, 79, 0.346);
-  margin-bottom: 40px;
+  display: flex;
+  height: 100%;
+  border-radius: 8px;
 }
 
 .trending {
-  display: grid;
-  grid-template-columns: 3% 95%;
-  grid-template-rows: 80% 20%;
   border: none;
   border-radius: 8px;
-  background-color: rgba(163, 79, 79, 0.346);
-  margin-bottom: 40px;
 }
